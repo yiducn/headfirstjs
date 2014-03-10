@@ -1,0 +1,20 @@
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+		<title>iRock</title>
+		<script type="text/javascript">
+			function touchRock(){
+				var usrName = prompt("你叫啥名字?","在这输入你的名字.");
+				if(usrName){
+					alert("你好,"+usrName+"。");
+					document.getElementById("rockImg").src="rock_happy.png";
+				}
+			}
+		</script>
+	</head>
+	<body onload="alert('hello world');">
+		<div style="margin-top:100px; text-align:center">
+			<img id="rockImg" src="rock.png" alt="iRock" onclick="touchRock();"/>
+		</div>
+	</body>
+</html>
